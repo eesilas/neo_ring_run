@@ -1,9 +1,8 @@
 let z = 0
 let y = 0
 let x = 0
-let strip: neopixel.Strip = null
-strip.setBrightness(100)
-strip = neopixel.create(DigitalPin.P0, 16, NeoPixelMode.RGB)
+let strip = neopixel.create(DigitalPin.P0, 12, NeoPixelMode.RGB)
+strip.setBrightness(40)
 while (true) {
     x = input.acceleration(Dimension.X) / 2
     y = input.acceleration(Dimension.Y) / 2
